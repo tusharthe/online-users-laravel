@@ -1,7 +1,7 @@
 {
     "name": "tusharthe/online-users-laravel",
     "description": "Show the users online in your Laravel application",
-    "type": "laravel,online,laravel-package",
+    "type": "laravel",
     "license": "MIT",
     "authors": [
         {

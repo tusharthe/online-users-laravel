@@ -15,7 +15,7 @@ After composer command, register service prodiver in `app/config/app.php` under 
 ```    
 
 
-add new middleware in `app/Http/Kernel.php` :
+After this, add new middleware in `app/Http/Kernel.php` :
 
 ```php
   \tusharthe\OnlineUsers\Middleware\UsersOnline::class,
@@ -32,8 +32,10 @@ class User extends Authenticatable
 }
 
 ```
-After this, add the Library (trait) in your EventServiceProvider in `app/Providers/EventServiceProvider.php` 
+
+After this, add the event in your EventServiceProvider in `app/Providers/EventServiceProvider.php` 
 under `'protected $listen = '`  :
+(## NOTE: in laravel 5.5 or above aumatically register event )
 ```php
         'Illuminate\Auth\Events\Logout' => [
             'tusharthe\OnlineUsers\Listeners\LogoutListener',

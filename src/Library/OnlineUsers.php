@@ -19,7 +19,17 @@ trait OnlineUsers
         $expiresAt = now()->addMinutes($min);
         return Cache::put($this->getCacheKey(), $this->getCacheContent(), $expiresAt);
     }
-
+    public function getCacheContent()
+    {
+        if (!empty($cache = Cache::get($this->getCacheKey()))) {
+            return $cache;
+        }
+        $cachedAt = Carbon::now();
+        return [
+            'cachedAt' => $cachedAt,
+            'user' => $this,
+        ];
+    }
     public function removeCache()
     {
         Cache::pull($this->getCacheKey());

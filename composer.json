@@ -13,7 +13,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "HighIdeas\\UsersOnline\\" : "src/"
+            "tusharthe\\OnlineUsers\\" : "src/"
         }
     },
     "extra": {

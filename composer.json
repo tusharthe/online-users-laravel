@@ -3,6 +3,7 @@
     "description": "Show the users online in your Laravel application",
     "type": "laravel",
     "license": "MIT",
+    "keywords": ["laravel", "users"],
     "authors": [
         {
             "name": "Tushar Kanti",

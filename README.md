@@ -35,13 +35,15 @@ class User extends Authenticatable
 
 After this, add the event in your EventServiceProvider in `app/Providers/EventServiceProvider.php` 
 under `'protected $listen = '`  :
-(## NOTE: in laravel 5.5 or above aumatically register event )
+## NOTE: in laravel 5.5 or above aumatically register event 
 ```php
         'Illuminate\Auth\Events\Logout' => [
             'tusharthe\OnlineUsers\Listeners\LogoutListener',
         ],
 ```
-Finally run `php artisan vendor:publish` for add the namespaces
+
+
+Finally run `php artisan vendor:publish` for add the namespaces & select appropriate Provider  `tusharthe\OnlineUsers\OnlineUsersServiceProvider`. 
 
 ## How To Use:
 
@@ -58,5 +60,9 @@ Or if you want to check if a specific user is online or not use the method `isOn
 $user = User::find($id);
 $user->isOnline();
 ```
+
+You Can also able to to set timming of user in `app/config/OnlineUser.php` 
+Default 3 min is set.
+
 ## Laravel compatibility
        5.4 or above    

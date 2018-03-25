@@ -16,4 +16,11 @@
             "HighIdeas\\UsersOnline\\" : "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HighIdeas\\UsersOnline\\Providers\\UsersOnlineEventServiceProvider"
+            ]
+        }
+    }
 }

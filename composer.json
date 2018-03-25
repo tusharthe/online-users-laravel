@@ -1,0 +1,14 @@
+{
+    "name": "tusharthe/online-users-laravel",
+    "description": "Show the users online in your Laravel application",
+    "type": "laravel,online,laravel-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tushar Kanti",
+            "email": "tkparial1@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

@@ -19,7 +19,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "tusharthe\\OnlineUsers\\Providers\\UsersOnlineEventServiceProvider"
+                "tusharthe\\OnlineUsers\\Providers\\OnlineUsersEventServiceProvider"
             ]
         }
     }

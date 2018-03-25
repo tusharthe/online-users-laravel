@@ -43,7 +43,8 @@ under `'protected $listen = '`  :
 ```
 
 
-Finally run `php artisan vendor:publish` for add the namespaces & select appropriate Provider  `tusharthe\OnlineUsers\OnlineUsersServiceProvider`. 
+## Finally run :
+ `php artisan vendor:publish` for add the namespaces & select appropriate Provider  `tusharthe\OnlineUsers\OnlineUsersServiceProvider`. 
 
 ## How To Use:
 

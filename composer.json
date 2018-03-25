@@ -2,6 +2,7 @@
     "name": "tusharthe/online-users-laravel",
     "description": "Show the users online in your Laravel application",
     "type": "laravel",
+    "keywords": ["laravel", "users"],
     "license": "MIT",
     "authors": [
         {
@@ -10,5 +11,17 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "tusharthe\\OnlineUsers\\" : "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HighIdeas\\UsersOnline\\Providers\\UsersOnlineEventServiceProvider"
+            ]
+        }
+    }
 }
